@@ -1,0 +1,30 @@
+.item-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.item-wrap .item-block {
+    width: 50%;
+    margin: 0 10px;
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 6px;
+}
+.item {
+    background: #eaeaea;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+}
+.cart-wrap .add {
+    height: 35px;
+    min-width: 150px;
+    background: green;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    ;
+}
