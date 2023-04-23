@@ -1,0 +1,19 @@
+* {
+margin: auto;
+width: auto;    
+}
+input {
+    width: 70px;
+  }
+  h1.text-center.mt-4 {
+    color: mediumblue;
+}
+
+  td.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: mediumslateblue;
+}
+.container {
+  background-color: powderblue;
+}

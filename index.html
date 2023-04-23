@@ -15,6 +15,63 @@
     <title>Cam's Sport Shopping Cart</title>
     </head>
     <body>
-        
+        <div class="container">
+            <h1 class="text-center mt-4">Cam Sports Shopping Cart</h1>
+            <div class="row">
+              <div class="col-12">
+                <table class="table table-responsive">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Price($)</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Remove</th>
+                      <th scope="col">Cart Item Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="name">Football</td>
+                      <td class="price">$12</td>
+                      <td class="qty"><input type="number" value="1" /></td>
+                      <td><button class="btn btn-light btn-sm remove">remove</button></td>
+                      <td class="itemTotal"><input type="number" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Basketball</td>
+                        <td class="price">$18</td>
+                        <td class="qty"><input type="number" value="1" /></td>
+                        <td><button class="btn btn-light btn-sm remove">remove</button></td>
+                        <td class="itemTotal"><input type="number" value="" /></td>
+                      </tr>
+                    <tr>
+                      <td class="name">Baseball</td>
+                      <td class="price">$10</td>
+                      <td class="qty"><input type="number" value="1" /></td>
+                      <td><button class="btn btn-light btn-sm remove">remove</button></td>
+                      <td class="itemTotal"><input type="number" value="" /></td>
+                    </tr>
+                    <tr>
+                      <td class="name">Golf Balls (3pk)</td>
+                      <td class="price">$15</td>
+                      <td class="qty"><input type="number" value="1" /></td>
+                      <td><button class="btn btn-light btn-sm remove">remove</button></td>
+                      <td class="itemTotal"><input type="number" value="" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <form class="col-12 mt-2 mb-4" id="addItem">
+                <input class="mx-2" name="name" type="text" placeholder="" required/>
+                <input class="mx-2" name="qty" type="number" value=""/>
+                <input class="mx-2" name="Price" type="number" placeholder=""/>
+                <button class="btn btn-primary btn-sm">add</button>
+              </form>
+              <div class="col-12 col-md-6">
+                <h4 class="mb-3">Price Total ($) <span id="priceTotal"></span></h4>
+                <input type="number" value="cartItemPrice" />
+              </div>
+            </div>
+          </div>
     </body>
 </html>
