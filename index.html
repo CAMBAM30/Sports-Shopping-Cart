@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="app.js"></script>
@@ -33,43 +31,43 @@
                     <tr>
                       <td class="name">Football</td>
                       <td class="price">$12</td>
-                      <td class="qty"><input type="number" value="1" /></td>
+                      <td class="qty"><input type="number" name="amount" placeholder="1" /></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
-                      <td class="itemTotal"><input type="number" value="" /></td>
+                      <td class="itemTotal"><input type="number" name="itemCount" placeholder="$12" /></td>
                     </tr>
                     <tr>
                         <td class="name">Basketball</td>
                         <td class="price">$18</td>
-                        <td class="qty"><input type="number" value="1" /></td>
+                        <td class="qty"><input type="number" name="amount" placeholder="1" /></td>
                         <td><button class="btn btn-light btn-sm remove">remove</button></td>
-                        <td class="itemTotal"><input type="number" value="" /></td>
+                        <td class="itemTotal"><input type="number" name="itemCount" placeholder="$18" /></td>
                       </tr>
                     <tr>
                       <td class="name">Baseball</td>
                       <td class="price">$10</td>
-                      <td class="qty"><input type="number" value="1" /></td>
+                      <td class="qty"><input type="number" name="amount" placeholder="1" /></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
-                      <td class="itemTotal"><input type="number" value="" /></td>
+                      <td class="itemTotal"><input type="number" name="itemCount" placeholder="$10" /></td>
                     </tr>
                     <tr>
                       <td class="name">Golf Balls (3pk)</td>
                       <td class="price">$15</td>
-                      <td class="qty"><input type="number" value="1" /></td>
+                      <td class="qty"><input type="number" name="amount" placeholder="1" /></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
-                      <td class="itemTotal"><input type="number" value="" /></td>
+                      <td class="itemTotal"><input type="number" name="itemCount" placeholder="$15" /></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <form class="col-12 mt-2 mb-4" id="addItem">
-                <input class="mx-2" name="name" type="text" placeholder="" required/>
-                <input class="mx-2" name="qty" type="number" value=""/>
-                <input class="mx-2" name="Price" type="number" placeholder=""/>
+                <input class="mx-2" type="text" name="name"  placeholder="Enter Item Name" required/>
+                <input class="mx-2" type="number" name="qty"  placeholder="0"/>
+                <input class="mx-2" type="number" name="Price" placeholder="0"/>
                 <button class="btn btn-primary btn-sm">add</button>
               </form>
               <div class="col-12 col-md-6">
                 <h4 class="mb-3">Price Total ($) <span id="priceTotal"></span></h4>
-                <input type="number" value="cartItemPrice" />
+                <input type="number" name="cartTotal" placeholder="0" />
               </div>
             </div>
           </div>
