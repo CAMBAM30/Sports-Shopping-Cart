@@ -8,6 +8,17 @@ $(document).ready(function () {
 
       return itemTotal;
    });
+
+   var sum = function (acc,x) { return acc + x};
+
+   var totalPrice = function () {
+      var cartsTotalPrice = 0;
+      var itemTotal = newItemTotal(ele);
+      cartsTotalPrice.push(itemTotal);
+      var priceTotal = cartsTotalPrice.reduce(sum);
+      $('#priceTotal').html(priceTotal);
+   }
+
    $(document).on("click", ".btn.remove", function (event) {
       $(this).closest("tr").remove();
    });
@@ -29,5 +40,6 @@ $(document).ready(function () {
       $("tbody").append('<tr>' +' <td class="name">' + name + "</td>" +
       '<td class="price">' + price + "</td>" + '<td class="qty">' + qty + "</td>" +
       '<td><button class="btn btn-light btn-sm remove">remove</button></td>' + '<td class="itemTotal">' + itemTotal + "</td>");
+
    });
 });

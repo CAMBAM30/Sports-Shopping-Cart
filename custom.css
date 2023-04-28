@@ -17,3 +17,6 @@ input {
 .container {
   background-color: powderblue;
 }
+a:hover {
+ color: black;
+}
