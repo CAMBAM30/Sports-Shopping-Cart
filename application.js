@@ -9,9 +9,8 @@ $(document).ready(function () {
       return itemTotal;
    });
    var priceTotal = 0;
-
-   $('td[class=".itemTotal-"]').each(function () {
-      priceTotal += Number($(this).text(itemTotal)) || 0;
+   $('td[class*=".itemTotal"]').each(function () {
+      priceTotal += parseFloat($(this).children(".itemTotal").text());
    });
    $('#priceTotal').text(priceTotal);
 
