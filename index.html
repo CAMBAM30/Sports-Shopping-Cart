@@ -28,28 +28,28 @@
                     <tr>
                       <td class="name">Football</td>
                       <td class="price">12</td>
-                      <td class="qty input">3</td>
+                      <td class="qty input"><input value="4" type="number"/></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
                       <td class="itemTotal"></td>
                     </tr>
                     <tr>
                         <td class="name">Basketball</td>
                         <td class="price">18</td>
-                        <td class="qty">2</td>
+                        <td class="qty input"><input value="3" type="number"/></td>
                         <td><button class="btn btn-light btn-sm remove">remove</button></td>
                         <td class="itemTotal"></td>
                       </tr>
                     <tr>
                       <td class="name">Baseball</td>
                       <td class="price">10</td>
-                      <td class="qty">1</td>
+                      <td class="qty input"><input value="2" type="number"/></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
                       <td class="itemTotal"></td>
                     </tr>
                     <tr>
                       <td class="name">Golf Balls (3pk)</td>
                       <td class="price">15</td>
-                      <td class="qty">4</td>
+                      <td class="qty input"><input value="5" type="number"/></td>
                       <td><button class="btn btn-light btn-sm remove">remove</button></td>
                       <td class="itemTotal"></td>
                     </tr>
@@ -58,7 +58,8 @@
               </div>
               <form class="col-12 mt-2 mb-4" id="addItem">
                 <input class="mx-2" type="text" name="name"  placeholder="itemName" required/>
-                <input class="mx-2" type="number" name="qty"  placeholder="qty"/>
+                <input class="mx-2" type="number" name="price"  placeholder="price" min="0" required/>
+                <input class="mx-2" type="number" name="qty"  placeholder="qty" min="0"/>
                 <button class="btn btn-primary btn-sm">add</button>
               </form>
               <div class="col-12 col-md-6">
